@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+ 
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__content">
+                    <div class="header-top__menu">
+                        <a class="header-top__menu-link" href="https://domayga.ru/about-us/" >О компании </a>
+                        <a class="header-top__menu-link" href="https://domayga.ru/services/" >Предоставляемые услуги</a>
+                        <a class="header-top__menu-link" href="https://domayga.ru/best-offers" >Каталог объектов</a>
+                        <a class="header-top__menu-link" href="https://domayga.ru/contacts/" >Контакты</a>
+                        <a class="header-top__menu-link" href="https://domayga.ru/about-us/" >Запрос вариантов</a>
+                    </div>
+                
+                    <div class="header-top__call">
+                        <div class="header-top__call__link-phone">
+                            <img alt="phone header" src="/picture/orange_phone.png">
+                            <a class="header-top__phone-number" href="tel:+79384002319">+7(938)400-23-19</a>
+                        </div>
+                            <a class="header-top__call-button" href="#"><img class = "header-top__call-phone-picture" src="/picture/phone.png"> Заказать звонок</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mid">
+            <div class="container">
+                    <div class="header-mid__content">
+                        <div class="header-mid__logo">
+                            <div class="header-mid__logo-picture">
+                                <a href="##"><img href="#" alt="progress logo" src="picture/progress.png"></a>
+                            </div>
+                            <div class="header-mid__logo-text">
+                                <div class="header-mid__logo-first-text">
+                                    <span>Недвижимость в Сочи</span>
+                                </div>
+                                <div class="header-mid__logo-second-text">
+                                    <span>на побережье Черного моря</span>
+                                </div>
+                                <div class="header-mid__logo-third-text">
+                                    <span>Адрес: г. Сочи, ул. Войкова, д. 4</span>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="header-mid__search">
+                            <form class="header-mid__search-area">
+                                <button class="header-mid__search-button"><img src="picture/loop.png"></button>
+                                <input class="header-mid__text-input" type="text" placeholder=" Поиск по каталогу">
+                            </form>
+                        </div>
+                        <div class="header-mid__favourite">
+                            <div class="header-mid__heart">
+                                <img class="header-mid__heart-pictrue" alt="logo" src="/picture/heart.png">
+                            </div>
+                            <div class="header_mid__number-of-favourits">
+                                <span>2</span>
+                            </div>
+                        </div>                   
+                    </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom__content">
+                    <div class="header-bottom__apartments-options">
+                        <div class="header-bottom-input-place">
+                            <div class="header-bottom-from-to-text">
+                                <span>Цена</span>
+                            </div>
+                            <div class="header-from-to-input">
+                                <div class="header__search">
+                                    <form class="header__search-area">
+                                        <input class="header__text-input" type="text" placeholder="от">
+                                    </form>
+                                </div>
+                                <div class="header__search">
+                                    <form class="header__search-area">
+                                        <input class="header__text-input" type="text" placeholder="до">
+                                    </form>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="header-bottom-input-place">
+                            <div class="header-bottom-input-place">
+                                <span>Тип</span>
+                            
+                            <div class="header-bottom-vemu-button">
+                                <div class="dropdown ">
+                                    <button onclick=" buttonWithListType()" class="dropbtn dropbtn-house-type dropbtn-haeder">Тип</button>
+                                    <div id="myDropdownType" class="dropdown-content">
+                                        <a href="#">example</a>
+                                        <a href="#">example</a>
+                                        <a href="#">example</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="header-bottom-input-place">
+                            <div class="header-bottom-from-to-text">
+                                <span>Площадь</span>
+                            </div>
+                            <div class="header-from-to-input">
+                                <div class="header__search">
+                                    <form class="header__search-area">
+                                        <input class="header__text-input" type="text" placeholder="от">
+                                    </form>
+                                </div>
+                                <div class="header__search">
+                                    <form class="header__search-area">
+                                        <input class="header__text-input" type="text" placeholder="до">
+                                    </form>
+                                </div>   
+                            </div>
+                        </div>                           
+                        <div class="header-bottom-input-place">
+                            <div class="header-bottom-input-place">
+                                <span>Район</span>
+                            </div>
+                            <div class="header-bottom-vemu-button">
+                                <div class="dropdown">
+                                    <button onclick=" buttonWithListPrice()" class="dropbtn dropbtn-price dropbtn-haeder">Район</button>
+                                    <div id="myDropdownPrice" class="dropdown-content">
+                                        <a href="#">Адлер - центр</a>
+                                        <a href="#">Ахун</a>
+                                        <a href="#">Блиново</a>
+                                        <a href="#">Бытха</a>
+                                        <a href="#">Веселое село</a>
+                                        <a href="#">Голубые Дали</a>
+                                        <a href="#">Дагомыс пос.</a>
+                                        <a href="#">Донская</a>
+                                        <a href="#">Завокзальный</a>
+                                        <a href="#">Заречный</a>
+                                        <a href="#">Имеретинская низменность</a>
+                                        <a href="#">Клубничная</a>
+                                        <a href="#">Красная Поляна пос</a>
+                                        <a href="#">Кудепста пос.</a>
+                                        <a href="#">Курортный городок</a>
+                                        <a href="#">Лазаревское пос.</a>
+                                        <a href="#">Лоо пос.</a>
+                                        <a href="#">Макаренко</a>
+                                        <a href="#">Мамайка верх</a>
+                                        <a href="#">Мамайка низ</a>
+                                        <a href="#">Мацеста</a>
+                                        <a href="#">Мирный</a>
+                                        <a href="#">Молдовка село</a>
+                                        <a href="#">Новый Сочи</a>
+                                        <a href="#">Орел-Изумруд село</a>
+                                        <a href="#">Приморье</a>
+                                        <a href="#">Раздольное</a>
+                                        <a href="#">Саят-Нова</a>
+                                        <a href="#">Светлана верх</a>
+                                        <a href="#">Светлана низ</a>
+                                        <a href="#">Соболевка</a>
+                                        <a href="#">Транспортная</a>
+                                        <a href="#">Фабрициуса</a>
+                                        <a href="#">Хоста</a>
+                                        <a href="#">Центр</a>
+                                        <a href="#">Южные культуры</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-bottom-input-place">
+                            <div class="header-bottom-input-place">
+                                <span>Первичная/Вторичная</span>
+                            </div>
+                            <div class="header-bottom-vemu-button">
+                                <div class="dropdown">
+                                    <button onclick=" buttonWithListSecondary()" class="dropbtn dropbtn-secondary dropbtn-haeder">Первичная/Вторичная</button>
+                                    <div id="myDropdownSecondary" class="dropdown-content">
+                                        <a href="#">Первичная</a>
+                                        <a href="#">Вторичная</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                        <a href="#" ><button class="item-discr__get-contacts">Показать</button></a>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="navigation">
+        <div class="container">
+            <div class="navigation-content">
+                <a class="navigation-link" href="https://domayga.ru/about-us/" >О компании </a>
+                <a class="navigation-link" href="https://domayga.ru/services/" >Предоставляемые услуги</a>
+                <a class="navigation-link" href="https://domayga.ru/best-offers" >Каталог объектов</a>
+                <a class="navigation-link" href="https://domayga.ru/contacts/" >Контакты</a>
+                <a class="navigation-link" href="https://domayga.ru/about-us/" >Запрос вариантов</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="month-offers">
+        <div class="container">
+            <span class="month-offers-content-text">Лучшие предложения месяца</span>
+            <div class="month-offers-content">
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog__picture">
+                        <img  class="catalog__picture" src="/picture/villa.svg" alt="villa">
+                    </div>
+                    <div class="best-offers__name">
+                        <span>КП ГОРНАЯ ОЛИМПИЯ 5</span>
+                    </div>
+                    <div class="best-offers__price">
+                        <span>57 000 000&#8381;</span>
+                    </div>
+                    <div class="best-offers__location">
+                        <div class="best-offers__location-text">
+                            <span>Район:</span>
+                        </div>
+                        <div class="best-offers__location-value">
+                            <span>Молдовка село</span>
+                        </div>
+                    </div>
+                    <div class="best-offers__size">
+                        <div class="best-offers__size-text">
+                            <span>Площадь дома  (м2):</span>
+                        </div>
+                        <div class="best-offers__size-value">
+                            <span>138-200 м2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-list">
+        <div class="container">
+            <div class="page-list__content">
+                <div class="page-list__button">
+                    <a class="page-list-decor" href="#">...</a>
+                </div>
+                <div class="page-list__button">
+                    <a class="page-list-decor" href="#">1</a>
+                </div>
+                <div class="page-list__button">
+                    <a class="page-list-decor" href="#">2</a>
+                </div>
+                <div class="page-list__button">
+                    <a class="page-list-decor" href="#">3</a>
+                </div>            
+                <div class="page-list__button">
+                    <a class="page-list-decor" href="#"> > </a>
+                </div>    
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <div class="review">
+        <div class="container">
+            <div class="review-content">
+                <div class="comments">
+                    <div class="comments-head">
+                        <div class="comments-head-text">
+                            <span>
+                                Наши покупатели говорят о нас
+                            </span>
+                        </div>
+                        <div class="comments-head-buttons">
+                            <div class="slider-button-prev">
+                                <div class="review-slider-button-prev swiper-button-prev"></div>                           
+                            </div>
+                            <div class="slider-button-next">
+                                <div class="review-slider-button-next swiper-button-next"></div>     
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="add-comment">
+                        <span>
+                            Добавить отзыв +
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class="review-slider">
+                    <div class="swiper-review swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-block">
+                                <div class="review-head">
+                                    <span>Коттеджный поселок</span>
+                                </div>               
+                                <div class="user-nikname">
+                                    <div class="user-nick">
+                                        <span>0lechka17</span>
+                                    </div>
+                                    
+                                    <div class="stars">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                    </div>
+                                </div>
+                                <div class="user-review">
+                                    <span>
+                                        В Сердце меня подкупила эта локация. Из окон будет открываться прекрасный вид на море...
+                                    </span>
+                                </div>
+                                <div class="feedback-to-user">
+                                    <div class="show-full-feedback">
+                                        <span>
+                                            Показать полностью
+                                        </span>
+                                        <img src="/picture/down.svg">
+                                    </div>
+                                    <div class="answer-to-feedback">
+                                        <span>
+                                            Ответить
+                                        </span>
+                                    </div>
+                                
+                                </div>            
+                            </div>                          
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-block">
+                                <div class="review-head">
+                                    <span>Коттеджный поселок</span>
+                                </div>               
+                                <div class="user-nikname">
+                                    <div class="user-nick">
+                                        <span>0lechka17</span>
+                                    </div>
+                                    
+                                    <div class="stars">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                    </div>
+                                </div>
+                                <div class="user-review">
+                                    <span>
+                                        В Сердце меня подкупила эта локация. Из окон будет открываться прекрасный вид на море...
+                                    </span>
+                                </div>
+                                <div class="feedback-to-user">
+                                    <div class="show-full-feedback">
+                                        <span>
+                                            Показать полностью
+                                        </span>
+                                        <img src="/picture/down.svg">
+                                    </div>
+                                    <div class="answer-to-feedback">
+                                        <span>
+                                            Ответить
+                                        </span>
+                                    </div>
+                                
+                                </div>            
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-block">
+                                <div class="review-head">
+                                    <span>Коттеджный поселок</span>
+                                </div>               
+                                <div class="user-nikname">
+                                    <div class="user-nick">
+                                        <span>0lechka17</span>
+                                    </div>
+                                    
+                                    <div class="stars">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                    </div>
+                                </div>
+                                <div class="user-review">
+                                    <span>
+                                        В Сердце меня подкупила эта локация. Из окон будет открываться прекрасный вид на море...
+                                    </span>
+                                </div>
+                                <div class="feedback-to-user">
+                                    <div class="show-full-feedback">
+                                        <span>
+                                            Показать полностью
+                                        </span>
+                                        <img src="/picture/down.svg">
+                                    </div>
+                                    <div class="answer-to-feedback">
+                                        <span>
+                                            Ответить
+                                        </span>
+                                    </div>
+                                
+                                </div>            
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-block">
+                                <div class="review-head">
+                                    <span>Коттеджный поселок</span>
+                                </div>               
+                                <div class="user-nikname">
+                                    <div class="user-nick">
+                                        <span>0lechka17</span>
+                                    </div>
+                                    
+                                    <div class="stars">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                    </div>
+                                </div>
+                                <div class="user-review">
+                                    <span>
+                                        В Сердце меня подкупила эта локация. Из окон будет открываться прекрасный вид на море...
+                                    </span>
+                                </div>
+                                <div class="feedback-to-user">
+                                    <div class="show-full-feedback">
+                                        <span>
+                                            Показать полностью
+                                        </span>
+                                        <img src="/picture/down.svg">
+                                    </div>
+                                    <div class="answer-to-feedback">
+                                        <span>
+                                            Ответить
+                                        </span>
+                                    </div>
+                                
+                                </div>            
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-block">
+                                <div class="review-head">
+                                    <span>Коттеджный поселок</span>
+                                </div>               
+                                <div class="user-nikname">
+                                    <div class="user-nick">
+                                        <span>0lechka17</span>
+                                    </div>
+                                    
+                                    <div class="stars">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                    </div>
+                                </div>
+                                <div class="user-review">
+                                    <span>
+                                        В Сердце меня подкупила эта локация. Из окон будет открываться прекрасный вид на море...
+                                    </span>
+                                </div>
+                                <div class="feedback-to-user">
+                                    <div class="show-full-feedback">
+                                        <span>
+                                            Показать полностью
+                                        </span>
+                                        <img src="/picture/down.svg">
+                                    </div>
+                                    <div class="answer-to-feedback">
+                                        <span>
+                                            Ответить
+                                        </span>
+                                    </div>
+                                
+                                </div>            
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-block">
+                                <div class="review-head">
+                                    <span>Коттеджный поселок</span>
+                                </div>               
+                                <div class="user-nikname">
+                                    <div class="user-nick">
+                                        <span>0lechka17</span>
+                                    </div>
+                                    
+                                    <div class="stars">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                        <img src="/picture/Star.svg">
+                                    </div>
+                                </div>
+                                <div class="user-review">
+                                    <span>
+                                        В Сердце меня подкупила эта локация. Из окон будет открываться прекрасный вид на море...
+                                    </span>
+                                </div>
+                                <div class="feedback-to-user">
+                                    <div class="show-full-feedback">
+                                        <span>
+                                            Показать полностью
+                                        </span>
+                                        <img src="/picture/down.svg">
+                                    </div>
+                                    <div class="answer-to-feedback">
+                                        <span>
+                                            Ответить
+                                        </span>
+                                    </div>
+                                
+                                </div>            
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="plan-of-work__title">
+        <span>Схема работы</span>
+    </div>
+    
+    <div class="plan-of-work">
+        <div class="container">
+            <div class="plan-of-work-content">
+                <div class="plan-of-work__first">
+                    <div class="plan-of-work__first-number">
+                        <span>1</span>
+                    </div>
+                    <div class="plan-of-work__first-about">
+                        <span>Выбор объекта</span>
+                    </div>
+                    <div class="plan-of-work__first-details">
+                        <span>Выбираем объект в базе, за чашкой хорошего кофе и планируем маршрут</span>
+                    </div>
+                </div>
+                <div class="plan-of-work__second">
+                    <div class="plan-of-work__second-number">
+                        <span>2</span>
+                    </div>
+                    <div class="plan-of-work__second-about">
+                        <span>Едем смотреть</span>
+                    </div>
+                    <div class="plan-of-work__second-details">
+                        <span>Едем смотреть лучшее из лучшего, по Вашему бюджету.</span>
+                    </div>        
+                </div>
+                <div class="plan-of-work__third">
+                        <div class="plan-of-work__third-number">
+                            <span>3</span>
+                        </div>
+                        <div class="plan-of-work__third-about">
+                            <span>На объекте</span>
+                        </div>
+                        <div class="plan-of-work__third-details">
+                            <span>Общаемся с продавцом и определяемся с окончательной стоимостью.</span>
+                        </div>        
+                </div>
+                <div class="plan-of-work__fourth">
+                        <div class="plan-of-work__fourth-number">
+                            <span>4</span>
+                        </div>
+                        <div class="plan-of-work__fourth-about">
+                            <span>Сделка</span>
+                        </div>
+                        <div class="plan-of-work__fourth-details">
+                            <span>Вы получаете желаемый результат, под контролем специалистов, без затраты лишнего времени и нервов.</span>
+                        </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer__get-selection">            
+                <div class="container">
+                    <div class="get-selection-content">
+                            <div class="footer__get-selection-content__text">
+                                <span class="footer__get-selection-content__text-high">Сложно выбрать лучшее?</span>  
+                                <span class="footer__get-selection-content__text-low">Наш эксперт  перезвонит вам и бесплатно поможет с выбором объекта</span>
+                            </div>
+                            <div class="footer__get-selection-content__form">
+                                <div class="footer__search">
+                                    <form class="footer__search-area">
+                                        <input class="footer__text-input" type="text" placeholder="Ваше имя">
+                                    </form>
+                                </div>
+                                <div class="footer__search">
+                                    <form class="footer__search-area">
+                                        <input class="footer__text-input" type="text" placeholder="Ваш номер">
+                                    </form>
+                                </div>
+                                <button class="footer__get-list">Жду звонка!</button>
+                            </div>
+                                                      
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom__content">
+                    <div class="fotter-bottom__logo">
+                        <div class="container">
+                            <div class="fotter-bottom__logo-content">
+                                <div class="footer-bottom__logo-picture">
+                                    <a href="##"><img href="#" alt="progress logo" src="picture/progress.png"></a>
+                                </div>
+                                <div class="footer-bottom__logo-text">
+                                    <div class="footer-bottom__logo-first-text">
+                                        <span>Недвижимость в Сочи</span>
+                                    </div>
+                                    <div class="footer-bottom__logo-second-text">
+                                        <span>на побережье Черного моря</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class=footer__button-keeper>
+                            <a href="#"><button class="footer__button-write-to-us">Напишите нам</button></a>
+                        </div>
+                    </div>
+                    <div class="fotter-bottom__links">
+                        <a href="#" class="fotter-bottom__link"><span>О компании</span></a>
+                        <a href="#" class="fotter-bottom__link"><span>Предоставляемые услуги</span></a>
+                        <a href="#" class="fotter-bottom__link"><span>Каталог объектов</span></a>
+                        <a href="#" class="fotter-bottom__link"><span>Контакты</span></a>
+                        <a href="#" class="fotter-bottom__link"><span>Запрос вариантов</span></a>
+                        <a href="#" class="fotter-bottom__link"><span>Акции</span></a>
+                    </div>
+                    
+                    <div class="fotter-bottom__contact-info">
+                        <div class="fotter-bottom__mail">
+                            <img class="fotter-bottom__mail-pic" src="/picture/mail.svg">
+                            <a href="#" class="footer-bottom__link"><span>pp30@bk.ru</span></a>
+                        </div>
+                        <div class="footer-bottom__adress">
+                            <img class="fotter-bottom__adress-pic" src="/picture/geo.svg"> 
+                            <a href="#" class="footer-bottom__link"><span >Адрес: Город-курорт Сочи, ул. Войкова, д. 4</span></a>                           
+                        </div>
+                        <div class="footer-bottom__phone">
+                            <img class="fotter-bottom__phone-pic" src="/picture/white-phone.svg">
+                            <a href="tel:+79384002319"class="footer-bottom__link"><span>+7(938)400-23-19</span></a>
+                        </div>
+                        <div class="footer-bottom__qr-code">
+                            <img src="/picture/qr-code.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+    </body>
+    </html> 
